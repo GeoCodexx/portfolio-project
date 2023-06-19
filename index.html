@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio Personal | Geordi Ramirez</title>
+    <!-- icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- scroll reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- Typed.js -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+</head>
+
+<body>
+    <!--Header-->
+    <header class="header">
+        <a href="#" class="logo">Portafolio</a>
+        <i class='bx bx-menu' id="menu-icon"></i>
+
+        <nav class="navbar">
+            <a href="#home" class="active">Inicio</a>
+            <a href="#about">Sobre mi</a>
+            <a href="#services">Servicios</a>
+            <a href="#portfolio">Proyectos</a>
+            <a href="#contact">Contáctame</a>
+        </nav>
+    </header>
+
+    <!-- home section -->
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3>Hola, soy</h3>
+            <h1>Geordi Ramirez</h1>
+            <h3>Y soy un <span class="multiple-text"></span></h3>
+            <p>Versátil y entusiasta con habilidades sólidas en HTML, CSS y JavaScript. Apasionado por generar
+                soluciones web de alta calidad que superen las expectativas del usuario.</p>
+            <div class="social-media">
+                <a href="#"><i class='bx bxl-facebook'></i></a>
+                <a href="#"><i class='bx bxl-twitter'></i></a>
+                <a href="#"><i class='bx bxl-instagram-alt'></i></a>
+                <a href="#"><i class='bx bxl-linkedin'></i></a>
+            </div>
+            <a href="#" class="btn">Descargar CV</a>
+        </div>
+        <div class="home-img">
+            <img src="./images/home02.jpg" alt="Imagen home.png">
+        </div>
+    </section>
+
+    <!-- about section -->
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="./images/programming.svg" alt="Programming Image">
+        </div>
+        <div class="about-content">
+            <h2 class="heading">Acerca de <span>Mi</span></h2>
+            <h3>(Desarrollador Web)</h3>
+            <p>Soy un apasionado desarrollador web con experiencia en soluciones digitales de calidad. Mi enfoque es
+                crear sitios web modernos y funcionales con una excelente experiencia de usuario. Utilizando HTML, CSS,
+                JavaScript y frameworks populares y robustos como React, Angular y Vue. También tengo conocimientos
+                sólidos en el lado del backend utilizando los lenguajes de PHP y JavaScript. Así como el manejo sistemas
+                de gestión de bases de datos como MySQL y MongoDB. Destaco por colaborar en equipo, adaptarme
+                rápidamente y mantenerme actualizado en las últimas tendencias del desarrollo web. Mi objetivo es crear
+                soluciones innovadoras que satisfagan las necesidades de los usuarios y superen las expectativas del
+                cliente.<span id="about-readmore"><br />Además tengo la afición por seguir aprendiendo y creciendo en
+                    esta industria dinámica y desafiante. Con el afán de enriquecer mis conocimientos y brindar
+                    soluciones concretas con cada proyecto de desarrollo web.</span></p>
+
+            <!-- <p>Soy un apasionado desarrollador web con una amplia experiencia en la creación de soluciones digitales de
+                alta calidad. Mi enfoque se centra en el desarrollo de sitios web modernos y funcionales que brinden una
+                experiencia de usuario excepcional. Utilizo tecnologías como HTML, CSS y JavaScript para construir
+                interfaces intuitivas y atractivas. Estoy familiarizado con frameworks populares como React y Angular.
+                Además, tengo sólidos conocimientos en el desarrollo de backend, utilizando lenguajes como PHP y
+                JavaScript.Así como el manejo de sistemas de gestión de bases de datos como MySQL y MongoDB. Me destaco por mi habilidad para
+                colaborar en equipo, adaptarme rápidamente a nuevos entornos y mantenerme actualizado sobre las últimas
+                tendencias y mejores prácticas en el campo del desarrollo web. Mi objetivo es crear soluciones
+                innovadoras que cumplan con las necesidades de los usuarios y superen las expectativas del cliente.
+                Estoy entusiasmado por seguir aprendiendo y creciendo en esta industria dinámica y desafiante.</p> -->
+            <button id="readmore-btn" class="btn">Leer más...</button>
+        </div>
+    </section>
+
+    <!-- services section -->
+    <section class="services" id="services">
+        <h2 class="heading">Mis <span>Servicios</span></h2>
+        <div class="services-container">
+            <div class="services-box">
+                <i class="bx bx-code-alt"></i>
+                <h3>Desarrollo Web</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error sapiente sint in ratione, itaque nobis
+                    odit optio veniam. Obcaecati porro laboriosam dolor alias! Ab illum nisi fugiat rerum, animi dicta.
+                </p>
+                <a href="#" class="btn">Leer más</a>
+            </div>
+            <div class="services-box">
+                <i class="bx bxs-paint"></i>
+                <h3>Diseño Gráfico</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error sapiente sint in ratione, itaque nobis
+                    odit optio veniam. Obcaecati porro laboriosam dolor alias! Ab illum nisi fugiat rerum, animi dicta.
+                </p>
+                <a href="#" class="btn">Leer más</a>
+            </div>
+            <div class="services-box">
+                <i class="bx bx-bar-chart-alt"></i>
+                <h3>Marketing Digital</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error sapiente sint in ratione, itaque nobis
+                    odit optio veniam. Obcaecati porro laboriosam dolor alias! Ab illum nisi fugiat rerum, animi dicta.
+                </p>
+                <a href="#" class="btn">Leer más</a>
+            </div>
+        </div>
+        <img style="height: 40vh; margin-top: 3rem;" src="./images/services.svg" alt="services-image">
+
+    </section>
+
+    <!-- Portfolio section-->
+    <section class="portfolio" id="portfolio">
+        <h2 class="heading">Ultimos <span>Proyectos</span></h2>
+        <div class="portfolio-container">
+            <div class="portfolio-box">
+                <img src="./images/service_01.jpg" alt="imagen1-portfolio">
+                <div class="portfolio-layer">
+                    <h4>Diseño Web</h4>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium velit quidem sint.</p>
+                    <a href="#"><i class="bx bx-link-external"></i></a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="./images/service_02.jpg" alt="imagen2-portfolio">
+                <div class="portfolio-layer">
+                    <h4>Diseño Web</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum voluptate dolor molestias ex
+                        mollitia, debitis amet rem! Enim dolor ut fuga similique iusto necessitatibus deserunt
+                        consectetur tempora. Sed, doloremque officia.</p>
+                    <a href="#"><i class="bx bx-link-external"></i></a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="./images/service_03.jpg" alt="imagen3-portfolio">
+                <div class="portfolio-layer">
+                    <h4>Diseño Web</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus eligendi delectus rerum laudantium
+                        totam dignissimos doloribus cupiditate nisi fugiat tempora veritatis debitis, reiciendis,
+                        temporibus eaque maiores nostrum animi excepturi molestiae.</p>
+                    <a href="#"><i class="bx bx-link-external"></i></a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="./images/service_04.jpg" alt="imagen4-portfolio">
+                <div class="portfolio-layer">
+                    <h4>Diseño Web</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus eligendi delectus rerum laudantium
+                        totam dignissimos doloribus cupiditate nisi fugiat tempora veritatis debitis, reiciendis,
+                        temporibus eaque maiores nostrum animi excepturi molestiae.</p>
+                    <a href="#"><i class="bx bx-link-external"></i></a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="./images/service_05.jpg" alt="imagen5-portfolio">
+                <div class="portfolio-layer">
+                    <h4>Diseño Web</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus eligendi delectus rerum laudantium
+                        totam dignissimos doloribus cupiditate nisi fugiat tempora veritatis debitis, reiciendis,
+                        temporibus eaque maiores nostrum animi excepturi molestiae.</p>
+                    <a href="#"><i class="bx bx-link-external"></i></a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="./images/service_06.jpg" alt="imagen6-portfolio">
+                <div class="portfolio-layer">
+                    <h4>Diseño Web</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus eligendi delectus rerum laudantium
+                        totam dignissimos doloribus cupiditate nisi fugiat tempora veritatis debitis, reiciendis,
+                        temporibus eaque maiores nostrum animi excepturi molestiae.</p>
+                    <a href="#"><i class="bx bx-link-external"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact section -->
+    <section class="contact" id="contact">
+        <h2 class="heading">Contáctame<span>!</span></h2>
+        <form action="#" autocomplete="off">
+            <div class="input-box">
+                <input type="text" name="nombre" placeholder="Nombre completo">
+                <input type="email" name="email" placeholder="Dirección de correo electrónico">
+            </div>
+            <div class="input-box">
+                <input type="number" name="telefono" placeholder="Número telefónico">
+                <input type="text" name="asunto" placeholder="Asunto">
+            </div>
+            <textarea name="" id="" cols="30" rows="10" placeholder="Escribe tu mensaje"></textarea>
+            <input class="btn" type="submit" value="Enviar mensaje">
+        </form>
+    </section>
+
+    <!-- Footer section -->
+    <footer class="footer">
+        <div class="footer-text">
+            <p>Copyright &copy; 2023 by GeoCodex | Todos los derechos reservados.</p>
+        </div>
+        <div class="footer-iconTop">
+            <a href="#home"><i class="bx bx-up-arrow-alt"></i></a>
+        </div>
+    </footer>
+
+    <!-- custom js -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>
