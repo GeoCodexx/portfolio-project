@@ -7,21 +7,6 @@ menuIcon.addEventListener("click", () => {
   navbar.classList.toggle("active");
 });
 
-/*READ MORE BUTTON ABOUT */
-let p = document.querySelector("#about-readmore");
-let btnReadMore = document.querySelector("#readmore-btn");
-
-const readMore = () => {
-  if (btnReadMore.textContent == "Leer más...") {
-    p.style.display = "inline";
-    //console.log(p.style.display);
-    btnReadMore.textContent = "Leer menos...";
-  } else {
-    p.style.display = "none";
-    btnReadMore.textContent = "Leer más...";
-  }
-};
-btnReadMore.addEventListener("click", readMore);
 
 /* scroll SECTIONS ACTIVE LINK*/
 let sections = document.querySelectorAll("section");
@@ -53,6 +38,7 @@ window.onscroll = () => {
   menuIcon.classList.remove("bx-x");
   navbar.classList.remove("active");
 };
+
 /*SCROLL REVEAL */
 ScrollReveal({
   reset: true,
@@ -72,9 +58,9 @@ ScrollReveal().reveal(".home-content p, .about-content", { origin: "right" });
 /*TYPED.JS */
 const typed = new Typed(".multiple-text", {
   strings: [
+    "Desarrollador Web",
     "Desarrollador Frontend",
     "Desarrollador Backend",
-    "Diseñador Gráfico",
   ],
   typeSpeed: 80,
   backSpeed: 80,
