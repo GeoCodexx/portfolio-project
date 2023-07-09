@@ -7,7 +7,6 @@ menuIcon.addEventListener("click", () => {
   navbar.classList.toggle("active");
 });
 
-
 /* scroll SECTIONS ACTIVE LINK*/
 let sections = document.querySelectorAll("section");
 let navLinks = document.querySelectorAll("header nav a");
@@ -66,4 +65,41 @@ const typed = new Typed(".multiple-text", {
   backSpeed: 80,
   backDelay: 800,
   loop: true,
+});
+
+/*EMAIL SEND */
+(function () {
+  emailjs.init("JbZBpeNeFPokRezj1");
+})();
+let formulario = document.querySelector("#form-contact");
+
+formulario.addEventListener("submit", (e) => {
+  e.preventDefault();
+  let templateParams = {
+    nombre: document.getElementById("nombre").value,
+    email: document.getElementById("email").value,
+    telefono: document.getElementById("telefono").value,
+    asunto: document.getElementById("asunto").value,
+    mensaje: document.getElementById("mensaje").value,
+  };
+
+  emailjs.send("service_eg1krlt", "template_vaycz2e", templateParams).then(
+    function (response) {
+      //console.log(templateParams);
+      //console.log("SUCCESS!", response.status, response.text);
+      Swal.fire(
+        "Gracias",
+        "Su mensaje ha sido enviado correctamente",
+        "success"
+      );
+      document.getElementById("nombre").value = "";
+      document.getElementById("email").value = "";
+      document.getElementById("telefono").value = "";
+      document.getElementById("asunto").value = "";
+      document.getElementById("mensaje").value = "";
+    },
+    function (error) {
+      console.error("FAILED...", error);
+    }
+  );
 });

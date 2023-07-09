@@ -14,6 +14,11 @@
     <script src="https://unpkg.com/scrollreveal"></script>
     <!-- Typed.js -->
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <!--Emailsend-->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 
 <body>
@@ -40,13 +45,14 @@
             <p>Versátil y entusiasta con habilidades sólidas en programación. Enfocado en generar
                 soluciones web que satisfagan las necesidades y expectativas del usuario.</p>
             <div class="social-media">
-                <a href="#"><i class='bx bxl-facebook'></i></a>
+                <!-- <a href="#"><i class='bx bxl-facebook'></i></a>
                 <a href="#"><i class='bx bxl-twitter'></i></a>
                 <a href="#"><i class='bx bxl-instagram-alt'></i></a>
-                <a href="#"><i class='bx bxl-linkedin'></i></a>
-                <a href="#"><i class='bx bxl-github'></i></a>
+                <a href="#"><i class='bx bxl-linkedin'></i></a> -->
+                <a href="https://mail.google.com/mail/u/0/#inbox"><i class='bx bxl-gmail'></i></a>
+                <a href="https://github.com/GeoCodexx"><i class='bx bxl-github'></i></a>
             </div>
-            <a href="#" class="btn">Descargar CV</a>
+            <a href="https://drive.google.com/file/d/1U0otudTs6feVUcHckiqLIR5frsJHrWzx/view?usp=sharing" class="btn" target="_blank" >Descargar CV</a>
         </div>
         <div class="home-img">
             <img src="./images/programming.svg" alt="Imagen home.png">
@@ -104,10 +110,7 @@
                 <!-- <a href="#" class="btn">Leer más</a> -->
             </div>
         </div>
-        <!-- <div class="image-footer-services" style=" text-align: center;">
-            <img style="height: 40vh; margin-top: 3rem;" src="./images/services.svg"
-                alt="services-image">
-        </div> -->
+
 
     </section>
 
@@ -161,7 +164,8 @@
                 <img src="./images/service_06.jpg" alt="imagen6-portfolio">
                 <div class="portfolio-layer">
                     <h4>Portafolio Personal</h4>
-                    <p>Desarrollo de Landing Page personal, usando HTML, CSS, JavaScript y algunas librerias de animación..</p>
+                    <p>Desarrollo de Landing Page personal, usando HTML, CSS, JavaScript y algunas librerias de
+                        animación..</p>
                     <a href="#"><i class="bx bx-link-external"></i></a>
                 </div>
             </div>
@@ -171,16 +175,17 @@
     <!-- Contact section -->
     <section class="contact" id="contact">
         <h2 class="heading">Contáctame<span>!</span></h2>
-        <form action="#" autocomplete="off">
+        <form id="form-contact" autocomplete="off">
             <div class="input-box">
-                <input type="text" name="nombre" placeholder="Nombre completo">
-                <input type="email" name="email" placeholder="Dirección de correo electrónico">
+                <input id="nombre" type="text" style="color:rgb(255, 255, 255,0.7);" name="nombre" placeholder="Nombre completo" value="" required>
+                <input id="email" type="email" style="color:rgb(255, 255, 255,0.7);" name="email" placeholder="Dirección de correo electrónico" value="" required>
             </div>
             <div class="input-box">
-                <input type="number" name="telefono" placeholder="Número telefónico">
-                <input type="text" name="asunto" placeholder="Asunto">
+                <input id="telefono" type="number" style="color:rgb(255, 255, 255,0.7);" name="telefono" placeholder="Número telefónico" value="" required>
+                <input id="asunto" type="text" style="color:rgb(255, 255, 255,0.7);" name="asunto" placeholder="Asunto" value="" required>
             </div>
-            <textarea name="" id="" cols="30" rows="10" placeholder="Escribe tu mensaje"></textarea>
+            <textarea id="mensaje" name="mensaje" style="color:rgb(255, 255, 255,0.7); line-height: 2.2rem;" cols="30" rows="10"
+                placeholder="Escribe tu mensaje" value="" required></textarea>
             <input class="btn" type="submit" value="Enviar mensaje">
         </form>
     </section>
@@ -197,6 +202,7 @@
 
     <!-- custom js -->
     <script src="js/script.js"></script>
+    <!-- <script src="sweetalert2.all.min.js"></script> -->
 </body>
 
 </html>
